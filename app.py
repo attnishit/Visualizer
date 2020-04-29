@@ -14,12 +14,13 @@ from sklearn.linear_model import  LogisticRegression
 from sklearn.neighbors import  KNeighborsClassifier	
 from sklearn.naive_bayes  import GaussianNB
 from sklearn.svm import SVC
-
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.tree import DecisionTreeClassifier
 
 def main():
 
 	st.title('Visualizer')
-
+	st.text('Built with Streamlit')
 	activities = ["EDA","Plot","Model Building","About"]
 
 	choice = st.sidebar.selectbox("Select Activity",activities)
@@ -99,9 +100,9 @@ def main():
 		if data is not None:
 			df = pd.read_csv(data)
 			st.dataframe(df.head())
-
+				
 			X = df.iloc[:,0:-1]
-			y = df.iloc[:,-1]
+			Y = df.iloc[:,-1]
 			seed = 7
 			
 			# Model Building : Assuming last column is target columns
@@ -130,12 +131,19 @@ def main():
 				model_std.append(cv_results.std())
 
 				accuracy_results = {"model_name":name,"model_accuracy":cv_results.mean(),"standard_deviation":cv_results.std()}
-	
+				all_models.append(accuracy_results)	
 
+			if st.checkbox("Metrics as Table"):
+				st.dataframe(pd.DataFrame(zip(model_names,model_mean,model_std),columns = ["Model","Accuracy","Standard_Deviation"]))
+
+			if st.checkbox("Metrics as JSON"):
+				st.json(all_models)
 
 	elif choice == 'About' : 
 		st.subheader("About")
-
+		st.markdown("""This project focuses at providing a more comprehensive way to interact with data.Created an Data
+Visualization App using Streamlit library which works well with any data and help to Visualize
+and extract relevant information from data in more easier way""")
 
 if __name__ == '__main__':
 	main()
