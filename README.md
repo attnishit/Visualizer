@@ -2,7 +2,7 @@
 # VISUALIZER:
 
 An app which provides an useful information from Data much efficiently and quickly and can be helpful to take decisions regarding which models to select for evaluation. This app was implemented using Streamlit library.
-![Making-of Animation](https://raw.githubusercontent.com/NishitAttrey/Visualizer/blob/master/Sample.gif "Making-of Animation")
+
 
 ## How to run this demo
 ```
