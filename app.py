@@ -2,13 +2,11 @@ import streamlit as st
 import pandas as pd 
 import numpy as np 
 
-# Data Viz Pkg 
 import matplotlib.pyplot as plt 
 import matplotlib  
 matplotlib.use('Agg')
 import seaborn as sns 
 
-# ML Pkg
 from sklearn import model_selection
 from sklearn.linear_model import  LogisticRegression
 from sklearn.neighbors import  KNeighborsClassifier	
@@ -115,8 +113,6 @@ def main():
 			models.append(("SVM",SVC()))
 
 			# Evaluate each model in turn
-
-			# List
 			model_names = []
 			model_mean = []
 			model_std = []
