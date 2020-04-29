@@ -1,20 +1,17 @@
 
 # VISUALIZER:
 
-This project demonstrates the 
-
-
-![Making-of Animation](https://github.com/NishitAttrey/Visualizer/blob/master/Demonstrating.gif "Making-of Animation")
+An app which provides an useful information from Data much efficiently and quickly and can be helpful to take decisions regarding which models to select for evaluation. This app was implemented using Streamlit library.
+![Making-of Animation](https://raw.githubusercontent.com/NishitAttrey/Visualizer/blob/master/Sample.gif "Making-of Animation")
 
 ## How to run this demo
 ```
-
 pip install --upgrade streamlit
 streamlit run app.py
-Add any Dataset and Explore it!
+Add any Dataset and Explore it(Be careful regarding data types of columns in model evaluation!)
 ```
 
-### Questions? Comments?
+### Wanna Learn more about Streamlit
 
-Please ask in the [Streamlit community](https://discuss.streamlit.io).
+Checkout [Streamlit](https://docs.streamlit.io/tutorial/index.html).
 
