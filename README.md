@@ -2,7 +2,10 @@
 # VISUALIZER:
 
 An app which provides an useful information from Data much efficiently and quickly and can be helpful to take decisions regarding which models to select for evaluation. This app was implemented using Streamlit library.
-
+## Here are Some Screenshots
+<img src = "Screenshot from 2020-04-29 23-02-53.png">
+<img src = "Screenshot from 2020-04-29 23-02-47.png">
+<img src = "Screenshot from 2020-04-29 23-02-37.png">
 
 ## How to run this demo
 ```
