@@ -25,7 +25,7 @@ def main():
 
 	if choice == 'EDA' : 
 		
-		st.subheader("Exploratory Data Analysis")
+		st.subheader("Exploratory Data Analysis!!")
 		data = st.file_uploader("Upload Dataset",type = ["csv","txt","xls"])		
 		if data is not None:
 			df = pd.read_csv(data)
